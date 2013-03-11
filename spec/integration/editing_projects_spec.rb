@@ -5,6 +5,7 @@ feature "Editing Projects" do
   before do
     Factory(:project, :name => "TextMate 2")
     visit "/"
+    binding.pry
     click_link "TextMate 2"
     click_link "Edit Project"
   end
