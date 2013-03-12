@@ -19,6 +19,7 @@ class TicketsController < ApplicationController
   end
 
   def show
+    #redirect_to "http://www.google.com"
   end
 
 private
