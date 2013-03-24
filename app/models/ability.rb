@@ -6,7 +6,7 @@ class Ability
       can permission.action.to_sym, permission.thing_type.constantize do |thing|
         thing.nil? ||
         permission.thing_id.nil? ||
-        permission.thing_id == thing_id
+        permission.thing_id == thing.id
       end
     end
   end
