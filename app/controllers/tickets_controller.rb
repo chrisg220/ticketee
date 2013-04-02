@@ -24,7 +24,7 @@ class TicketsController < ApplicationController
   end
 
   def show
-    #redirect_to "http://www.google.com"
+    @comment = @ticket.comments.build
   end
 
   def edit
